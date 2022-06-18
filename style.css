@@ -8,7 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #121212;
+    background-color: #fff;
 }
 .flower-frame{
     width: 1000px;
@@ -36,7 +36,7 @@ body{
 }
 .leaf-body_item{
     width: 200px;
-    height: 200px;
+    height: 300px;
     border-radius: 100%;
     background-color: #2f7a23;
     transform: rotate(90deg);
@@ -47,4 +47,36 @@ body{
     border-radius: 300px;
     background-color: #fff;
     z-index: 20;
+}
+.leaf-body:nth-child(2) .leaf-body_item{
+    background-color: red;
+}
+.leaf-body:nth-child(3) .leaf-body_item{
+    background-color: violet;
+}
+.leaf-body:nth-child(4) .leaf-body_item{
+    background-color: blue;
+}
+.leaf-body:nth-child(5) .leaf-body_item{
+    background-color: blueviolet;
+}
+.leaf-body:nth-child(6) .leaf-body_item{
+    background-color: burlywood;
+}
+.leaf-body:nth-child(7) .leaf-body_item{
+    background-color: goldenrod;
+}
+.leaf-body:nth-child(8) .leaf-body_item{
+    background-color: yellow;
+}
+.leaf-body:nth-child(9) .leaf-body_item{
+    background-color: brown;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg) scale(0.6);
+    }
+    100%{
+        transform: rotate(360deg) scale(0.6);
+    }
 }
